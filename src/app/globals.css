@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.banner{
+  height: 700px !important;
+  object-fit: cover;
+}
