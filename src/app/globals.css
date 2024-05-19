@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSans';
+  src: url('../fonts/NotoSans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -36,3 +48,73 @@ body {
   height: 700px !important;
   object-fit: cover;
 }
+
+/* styles/globals.css */
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+p{
+  font-family: 'NotoSans', sans-serif;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px !important;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+.slick-prev:before, .slick-next:before{
+  color: #000000 !important;
+}
+.slider-container .content{
+  margin-top: 15px;
+}
+.slick-dots {
+  bottom: -50px !important;
+}
+.about-img {
+  background-image: url('/about-us.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+}
+#about-us .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 30px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color: #000000;
+  border-radius: 50%;
+  background-size: 60% 60% !important;
+}
+.carousel-indicators [data-bs-target]{
+  background-color: #333 !important;
+}
+.carousel-indicators .active{
+  background-color: #000000 !important;
+}
+
+
+/*Start section spacing */
+#home-banner{
+  margin-bottom: 50px;
+}
+#about-us{
+  margin-bottom: 50px;
+}
+#slider-products{
+  margin-bottom: 100px;
+}
+/*End section spacing */
