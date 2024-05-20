@@ -57,7 +57,9 @@ h1,h2,h3,h4,h5,h6{
 p{
   font-family: 'NotoSans', sans-serif;
 }
-
+header{
+  background-color: #dd4b4b !important;
+}
 .slick-slide {
   display: flex;
   justify-content: center;
