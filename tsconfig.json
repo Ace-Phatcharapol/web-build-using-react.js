@@ -29,7 +29,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "src/components/pdSlider.js", "src/app/header.tsx", "src/components/menu.js"  ],
+, "src/components/pdSlider.js", "src/app/header.tsx", "src/components/menu.js", "src/components/footer.js"  ],
   "exclude": [
     "node_modules"
   ]

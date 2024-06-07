@@ -4,11 +4,12 @@ import Script from 'next/script';
 import Banner from '../components/banner.js';
 import PdSlider from '../components/pdSlider';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from '../components/footer.js';
 
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <>
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" strategy="lazyOnload" />
       <section id="home-banner" className="w-100">
         <div className="z-10 w-full items-center justify-between font-mono text-sm lg:block">
@@ -50,6 +51,7 @@ export default function Home() {
           <PdSlider />
         </div>
       </section>
-    </main>
+      <Footer />
+    </>
   );
 }
