@@ -4,6 +4,7 @@ import Script from 'next/script';
 import Banner from '../components/banner.js';
 import PdSlider from '../components/pdSlider';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Products from '../components/products.js';
 
 
 export default function Home() {
@@ -49,6 +50,9 @@ export default function Home() {
           <h2>Online Shop</h2><br />
           <PdSlider />
         </div>
+      </section>
+      <section id="product">
+        <Products />
       </section>
     </>
   );
