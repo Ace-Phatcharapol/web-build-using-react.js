@@ -8,10 +8,11 @@ import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "../components/menu";
+import "../../tailwind.config.ts";
 
 export default function Header() {
 	return (
-		<AppBar position="static">
+		<AppBar sx={{ backgroundColor: 'prim.main' }} position="static">
 			<Toolbar>
 				{/*Inside the IconButton, we 
 					can render various icons*/}

@@ -4,7 +4,6 @@ import Script from 'next/script';
 import Banner from '../components/banner.js';
 import PdSlider from '../components/pdSlider';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from '../components/footer.js';
 
 
 export default function Home() {
@@ -51,7 +50,6 @@ export default function Home() {
           <PdSlider />
         </div>
       </section>
-      <Footer />
     </>
   );
 }
